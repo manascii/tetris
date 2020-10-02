@@ -79,13 +79,25 @@ void game(Shape shape, Screen screen, int startLevel, bool easy, string basename
             if ( ch == KEY_UP) {
                 shape.rotate();
             }
+            else if ( ch == 'k' ) {
+                shape.rotate();
+            }
             else if ( ch == KEY_DOWN) {
+                shape.move(3);
+            }
+            else if ( ch == 'j' ) {
                 shape.move(3);
             }
             else if ( ch == KEY_LEFT) {
                 shape.move(1);
             }
+            else if ( ch == 'h' ) {
+                shape.move(1);
+            }
             else if ( ch == KEY_RIGHT) {
+                shape.move(2);
+            }
+            else if ( ch == 'l' ) {
                 shape.move(2);
             }
             else if ( ch == ' ' ) {
